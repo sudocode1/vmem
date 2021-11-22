@@ -1,4 +1,4 @@
-f = open('idx.is', 'r')
+f = open('main.vmem', 'r')
 file = f.read()
 f.close()
 
