@@ -1,6 +1,44 @@
 # vmem
 VMem - Virtual Memory with a custom language inspired by Assembly.
 
+## Example
+This is an example program. With more developments to the language, this will be simplified. 
+```vmem
+CREATE BIT
+CREATE BIT
+CREATE BIT
+INIT 0
+SELECT 0
+SET 2
+INIT 1
+
+SELECT 1
+CALCULATION MULTIPLY 0 0
+READ BIT
+COPY 2
+RELEASE
+
+INIT 1
+SELECT 1
+CALCULATION MULTIPLY 0 2
+READ BIT
+SELECT 2
+RELEASE
+SELECT 1
+COPY 2
+RELEASE
+
+INIT 1
+SELECT 1
+CALCULATION MULTIPLY 0 2
+READ BIT
+SELECT 2
+RELEASE
+SELECT 1
+COPY 2
+RELEASE
+```
+
 ## Language
 ### Directly with MEMORY
 These commands will let you work with the MEMORY, rather than with specific bits. 
