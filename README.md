@@ -52,6 +52,10 @@ INIT <BIT> will intiailise the bit entered, setting it to 0, so you can then sel
 SELECT <BIT> will allow you to select an initialized bit, allowing you to utilise it.
 #### `READ BYTE`
 READ BYTE will output the MEMORY in the state it is in.
+#### `ASCII <BIT>`
+ASCII <BIT> will output the selected bit after being converted to ASCII.
+#### `ASCII <BYTE>`
+ASCII <BYTE> will output the MEMORY after being converted to ASCII.
 #### `DESTROY MEMORY`
 DESTROY MEMORY will reset the MEMORY back to 0 bits.
 

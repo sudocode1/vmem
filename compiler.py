@@ -51,6 +51,21 @@ for line in file.split('\n'):
 
         if DEBUG:
             print(f"RELEASED BIT {PREV}")
+    elif line.startswith('ASCII'):
+        if (SELECTED == None):
+            print(ERRORS[3] + ' WITH ' + str(MEMORY))
+            break
+        elif splitter[1] == 'BIT':
+            print(chr(MEMORY[SELECTED]))
+        elif splitter[1] == 'BYTE': 
+            ascbyte = ''        
+            for bit in MEMORY:
+              if bit == None:
+                pass
+              else:
+                ascbyte += chr(bit)
+            
+            print(ascbyte)
     elif line.startswith('CALCULATION'):
         if (SELECTED == None):
             print(ERRORS[3] + ' WITH ' + str(MEMORY))
